@@ -19,3 +19,29 @@ function load_javascript()
 
 }
 add_action('wp_enqueue_scripts', 'load_javascript');
+
+// Add Support
+add_theme_support('menus');
+add_theme_support('post-thumbnails');
+
+// Register Menus
+register_nav_menus(
+    array(
+        'main-nav' => 'Top Menu',
+    )
+);
+
+// Add Image Sizes
+add_image_size('post_image', 1100,600, true);
+
+// Add a Widget
+
+register_sidebar(
+  array(
+      'name' => 'Page Sidebar',
+      'id' => 'page-sidebar',
+      'class' => '',
+      'before_title' => '<h4>',
+      'after_title' => '</h4>',
+  )
+);
