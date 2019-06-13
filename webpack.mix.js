@@ -16,6 +16,7 @@ mix.browserSync({
     proxy: 'WPstarter.build',
     files: [
         '**/*.php',
-        'public/**/*',
+        'js/**/*',
+        'css/**/*',
     ],
 });
