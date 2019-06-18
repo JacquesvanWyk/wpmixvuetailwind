@@ -6,7 +6,7 @@
                 <p class="text-6xl"><?php the_title();?></p>
             </div>
             <div class="row">
-                <div class="col-9">
+                <div class="w-2/3 py-5">
                     <div class="content rounded shadow-lg p-10">
                         <?php if(have_posts()): while(have_posts()): the_post();?>
 
@@ -15,7 +15,7 @@
                         <?php endwhile; else: endif;?>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="w-1/3 p-5">
                     <div class="sidebar-content list-none rounded shadow-lg p-10 sticky top-0">
                         <?php get_sidebar();?>
                     </div>
