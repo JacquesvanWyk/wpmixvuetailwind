@@ -9,7 +9,7 @@
     <?php wp_head();?>
 
 </head>
-<body <?php body_class();?>>
+<body <?php body_class('border-t-8 border-teal-500');?>">
 <header>
     <nav>
         <div class="container mx-auto px-4 max-w-4xl">

@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header(); ?>
 
 <div id="app" class="w-full">
     <div class="container mx-auto px-4 py-10 max-w-4xl">
@@ -14,12 +14,12 @@
 </div>
 
 <div class="content">
-    <?php if(have_posts()): while(have_posts()): the_post();?>
+    <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-    <?php the_content();?>
+        <?php the_content(); ?>
 
-    <?php endwhile; else: endif;?>
+    <?php endwhile; else: endif; ?>
 </div>
 
 
-<?php get_footer();?>
+<?php get_footer(); ?>
