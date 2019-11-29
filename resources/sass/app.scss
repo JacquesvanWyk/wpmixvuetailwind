@@ -1,12 +1,18 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
 
 // Tailwindcss
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-// Header
-@import "header";
+// Layout
+@import "Layout/header";
+@import "Layout/footer";
+@import "Layout/pages";
 
 
+// Components
+
+// Fonts

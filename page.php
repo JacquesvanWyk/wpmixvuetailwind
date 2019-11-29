@@ -23,4 +23,5 @@
             </div>
         </div>
     </div>
+    <div id="gotoTop""><i class="fas fa-caret-up"></i></div>
 <?php get_footer();?>

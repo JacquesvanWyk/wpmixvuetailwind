@@ -5,15 +5,15 @@ const tailwindcss = require('tailwindcss');
 
 mix.setPublicPath('./');
 
-mix.js('resources/js/app.js', './js')
-    .sass('resources/sass/app.scss', './css').options({
+mix.js('resources/js/app.js', './assets/js')
+    .sass('resources/sass/app.scss', './assets/css').options({
         processCssUrls: false,
         postCss: [tailwindcss('./tailwind.config.js')],
     });
-mix.browserSync('WPstarter.build');
+mix.browserSync('play.local');
 
 mix.browserSync({
-    proxy: 'WPstarter.build',
+    proxy: 'play.local',
     files: [
         '**/*.php',
         'js/**/*',
